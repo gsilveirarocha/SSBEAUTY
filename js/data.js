@@ -204,16 +204,8 @@ const produtos = [
     // SEMIJOIAS
     // =========================
 
-    {
-    id: 23,
-    nome: "Kit Relógio + Pulseira + Brincos",
-    categoria: "semijoias",
-    preco: 70.00,
-    imagem: "img/Kit Relógios Pulseiras e Brincos.jpeg",
-    descricao: "Conjunto elegante e sofisticado, ideal para complementar qualquer look com charme e estilo. Perfeito para presentear ou ocasiões especiais."
-},
 {
-    id: 24,
+    id: 23,
     nome: "Brincos Elegantes",
     categoria: "semijoias",
     preco: 10.00,
@@ -221,7 +213,7 @@ const produtos = [
     descricao: "Brincos delicados e modernos que valorizam sua beleza e combinam com diferentes ocasiões."
 },
 {
-    id: 25,
+    id: 24,
     nome: "Brincos Elegantes",
     categoria: "semijoias",
     preco: 10.00,
@@ -229,12 +221,68 @@ const produtos = [
     descricao: "Brincos delicados e modernos que valorizam sua beleza e combinam com diferentes ocasiões."
 },
 {
-    id: 26,
+    id: 25,
     nome: "Brincos Elegantes",
     categoria: "semijoias",
     preco: 10.00,
     imagem: "img/Brinco 3.jpeg",
     descricao: "Brincos delicados e modernos que valorizam sua beleza e combinam com diferentes ocasiões."
+},
+{
+    id: 26,
+    nome: "Kit Relógio Dourado Mostrador Rosa",
+    categoria: "semijoias",
+    preco: 70.00,
+    imagem: "img/Kit Relógio Dourado Mostrador Rosa.jpeg",
+    descricao: "Relógio dourado com mostrador rosa, aro em strass, pulseiras delicadas e 3 pares de brincos. Um conjunto moderno e feminino para completar seu visual."
+},
+{
+    id: 27,
+    nome: "Kit Relógio Retangular Dourado com Olho Grego",
+    categoria: "semijoias",
+    preco: 70.00,
+    imagem: "img/Kit Relógio Retangular Dourado com Olho Grego.jpeg",
+    descricao: "Kit com relógio dourado de visor retangular, pulseiras delicadas e 3 pares de brincos. Elegância e estilo para qualquer ocasião."
+},
+{
+    id: 28,
+    nome: "Kit Relógio Rosé com Cristais",
+    categoria: "semijoias",
+    preco: 70.00,
+    imagem: "img/Kit Relógio Rosé com Cristais.jpeg",
+    descricao: "Kit com relógio rosé, pulseira delicada e 3 pares de brincos. Um conjunto clássico e elegante para qualquer ocasião."
+},
+{
+    id: 29,
+    nome: "Kit Relógio Gota Dourado",
+    categoria: "semijoias",
+    preco: 70.00,
+    imagem: "img/Kit Relógio Gota Dourado.jpeg",
+    descricao: "Design exclusivo e delicado. Relógio em formato de gota, acompanhado de pulseira com cristais e 2 pares de brincos. Um conjunto refinado para qualquer ocasião."
+},
+{
+    id: 30,
+    nome: "Kit Relógio Prata Borboleta",
+    categoria: "semijoias",
+    preco: 70.00,
+    imagem: "img/Kit Relógio Prata Borboleta.jpeg",
+    descricao: "Kit com relógio prateado, pulseira delicada e 3 pares de brincos. Elegância e brilho para complementar qualquer look."
+},
+{
+    id: 31,
+    nome: "Kit Relógio Octogonal Prata",
+    categoria: "semijoias",
+    preco: 70.00,
+    imagem: "img/Kit Relógio Octogonal Prata.jpeg",
+    descricao: "Kit com relógio prateado de caixa octogonal, pulseira estilo berloque e 3 pares de brincos. Moderno, elegante e versátil."
+},
+{
+    id: 32,
+    nome: "Kit Smartwatch Dourado",
+    categoria: "semijoias",
+    preco: 70.00,
+    imagem: "img/Kit Smartwatch Dourado.jpeg",
+    descricao: "Kit com smartwatch, pulseira em malha magnética, pulseira com cristais e 3 pares de brincos. Tecnologia e elegância no dia a dia."
 }
 ];
 
