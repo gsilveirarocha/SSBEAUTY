@@ -97,7 +97,23 @@ const produtos = [
     },
     {
         id: 11,
-        nome: "Vivai Hidra Gloss Labial",
+        nome: "Vivai Hidra Gloss Labial - Transparente",
+        categoria: "maquiagens",
+        preco: 10.00,
+        imagem: "img/Vivai Hidra Gloss Labial.jpeg",
+        descricao: "Gloss hidratante com brilho confortável."
+    },
+    {
+        id: 33,
+        nome: "Vivai Hidra Gloss Labial - Marrom",
+        categoria: "maquiagens",
+        preco: 10.00,
+        imagem: "img/Vivai Hidra Gloss Labial.jpeg",
+        descricao: "Gloss hidratante com brilho confortável."
+    },
+    {
+        id: 34,
+        nome: "Vivai Hidra Gloss Labial - Vermelho",
         categoria: "maquiagens",
         preco: 10.00,
         imagem: "img/Vivai Hidra Gloss Labial.jpeg",
@@ -105,7 +121,23 @@ const produtos = [
     },
     {
         id: 12,
-        nome: "Vivai Iluminador",
+        nome: "Vivai Iluminador - Cor 1 Prata/Branco Perolado",
+        categoria: "maquiagens",
+        preco: 10.00,
+        imagem: "img/Vivai Iluminador.jpeg",
+        descricao: "Realça pontos estratégicos do rosto com brilho sofisticado."
+    },
+    {
+        id: 37,
+        nome: "Vivai Iluminador - Cor 3 Champanhe/Dourado Claro",
+        categoria: "maquiagens",
+        preco: 10.00,
+        imagem: "img/Vivai Iluminador.jpeg",
+        descricao: "Realça pontos estratégicos do rosto com brilho sofisticado."
+    },
+    {
+        id: 38,
+        nome: "Vivai Iluminador - Cor 4 Dourado Intenso/Bronze",
         categoria: "maquiagens",
         preco: 10.00,
         imagem: "img/Vivai Iluminador.jpeg",
@@ -113,7 +145,23 @@ const produtos = [
     },
     {
         id: 13,
-        nome: "Vivai La Belle Blush",
+        nome: "Vivai La Belle Blush - Tom 1 Rosa Claro/Suave",
+        categoria: "maquiagens",
+        preco: 10.00,
+        imagem: "img/Vivai La Belle Blush.jpeg",
+        descricao: "Blush com acabamento suave e natural."
+    },
+    {
+        id: 35,
+        nome: "Vivai La Belle Blush - Tom 3 Rosa Queimado/Malva",
+        categoria: "maquiagens",
+        preco: 10.00,
+        imagem: "img/Vivai La Belle Blush.jpeg",
+        descricao: "Blush com acabamento suave e natural."
+    },
+    {
+        id: 36,
+        nome: "Vivai La Belle Blush - Tom 4 Marrom/Vinho",
         categoria: "maquiagens",
         preco: 10.00,
         imagem: "img/Vivai La Belle Blush.jpeg",
@@ -281,7 +329,7 @@ const produtos = [
     nome: "Kit Smartwatch Dourado",
     categoria: "semijoias",
     preco: 70.00,
-    imagem: "img/Kit Smartwatch Dourado.jpeg",
+    imagem: "img/Kit Smartwatch Dourado.jpeggit",
     descricao: "Kit com smartwatch, pulseira em malha magnética, pulseira com cristais e 3 pares de brincos. Tecnologia e elegância no dia a dia."
 }
 ];
