@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SS Beauty</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <div class="container">
+
+            <div class="logo">
+                SS Beauty
+            </div>
+
+            <div class="search">
+
+                <input type="text" id="searchHome" placeholder="Buscar produtos...">
+
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+            </div>
+
+            <div class="icons">
+
+                <div class="cart" onclick="toggleCart()">
+    <i class="fa-solid fa-cart-shopping"></i>
+    <span id="cartCount">0</span>
+</div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- Menu -->
+
+    <nav>
+    <ul>
+
+        <li><a href="index.html">Início</a></li>
+
+        <li><a href="produtos.html?categoria=pele">Cuidados com a Pele</a></li>
+
+        <li><a href="produtos.html?categoria=maquiagens">Maquiagens</a></li>
+
+        <li><a href="produtos.html?categoria=sobrancelhas">Sobrancelhas</a></li>
+
+        <li><a href="produtos.html?categoria=acessorios">Acessórios</a></li>
+
+        <li><a href="produtos.html?categoria=higiene">Higiene e Cuidados</a></li>
+
+        <li><a href="produtos.html?categoria=semijoias">Semi Joias</a></li>
+
+    </ul>
+</nav>
+
+    <!-- Banner -->
+
+    <section class="banner">
+
+        <div class="banner-content">
+
+            <h1>Realce sua beleza todos os dias</h1>
+
+            <p>Os melhores produtos com preços especiais.</p>
+
+            <a href="#homeProducts">
+    <button>Comprar Agora</button>
+</a>
+
+        </div>
+
+    </section>
+
+    <!-- Categorias -->
+
+    <section class="categories">
+
+        <h2>Categorias</h2>
+
+        <div class="cards">
+
+           <a href="produtos.html?categoria=pele" class="card">
+    <img src="img/pele.png" alt="Cuidados com a Pele">
+    <span>Cuidados da Pele</span>
+</a>
+
+<a href="produtos.html?categoria=maquiagens" class="card">
+    <img src="img/maquiagem.png" alt="Maquiagens">
+    <span>Maquiagens</span>
+</a>
+
+<a href="produtos.html?categoria=sobrancelhas" class="card">
+    <img src="img/sombracelha.png" alt="Sobrancelhas">
+    <span>Sobrancelhas</span>
+</a>
+
+<a href="produtos.html?categoria=acessorios" class="card">
+    <img src="img/acessorios.png" alt="Acessórios">
+    <span>Acessórios</span>
+</a>
+
+<a href="produtos.html?categoria=higiene" class="card">
+    <img src="img/higiene.png" alt="Higiene">
+    <span>Higiene Pessoal</span>
+</a>
+
+<a href="produtos.html?categoria=semijoias" class="card">
+    <img src="img/semijoias.png" alt="Semi Joias">
+    <span>Semi Joias</span>
+</a>
+
+        </div>
+
+    </section>
+
+    <!-- Produtos -->
+
+    <section class="products">
+
+    <h2>Produtos em Destaque</h2>
+
+    <div id="homeProducts" class="product-grid"></div>
+
+</section>
+
+<section class="brands">
+
+    <h2>Marcas que trabalhamos</h2>
+
+    <div class="brands-grid">
+
+        <img src="img/marcas/Face Beauty.png" alt="Marca 1">
+        <img src="img/marcas/Lady Beauty logo.png" alt="Marca 2">
+        <img src="img/marcas/Love Logo.png" alt="Marca 3">
+        <img src="img/marcas/lovely logo.png" alt="Marca 4">
+        <img src="img/marcas/VIVAI.jpg" alt="Marca 5">
+
+    </div>
+
+</section>
+
+    <!-- Rodapé -->
+
+    <footer>
+
+        <h3>SS Beauty</h3>
+
+        <p>Beleza, autoestima e qualidade.</p>
+
+        <p>© 2026 Todos os direitos reservados.</p>
+
+    </footer>
+
+    <!-- CARRINHO LATERAL -->
+<div id="cartSidebar" class="cart-sidebar">
+
+    <div class="cart-header">
+        <h2>Seu Carrinho</h2>
+        <span onclick="toggleCart()" class="close">✖</span>
+    </div>
+
+    <div id="cartItems" class="cart-items">
+        <!-- itens via JS -->
+    </div>
+
+    <div class="cart-footer">
+
+        <div class="cart-total">
+            Total: R$ <span id="cartTotal">0,00</span>
+        </div>
+
+        <button class="btn-finalizar" onclick="abrirCheckout()">
+    Finalizar Pedido
+</button>
+
+    </div>
+
+</div>
+
+<!-- BACKDROP -->
+<div id="backdrop" class="backdrop" onclick="toggleCart()"></div>
+
+<!-- CHECKOUT MODAL -->
+<div id="checkoutModal" class="checkout-modal">
+
+    <div class="checkout-box">
+
+        <h2>Finalizar Pedido</h2>
+
+        <input type="text" id="nome" placeholder="Seu nome">
+        <input type="text" id="telefone" placeholder="Telefone">
+
+        <input type="text" id="endereco" placeholder="Endereço completo">
+        <input type="text" id="bairro" placeholder="Bairro">
+        <input type="text" id="cidade" placeholder="Cidade">
+
+        <select id="pagamento">
+            <option value="PIX">PIX</option>
+            <option value="Dinheiro">Dinheiro</option>
+            <option value="Cartão">Cartão</option>
+        </select>
+
+        <textarea id="obs" placeholder="Observações"></textarea>
+
+        <button class="btn-finalizar" onclick="finalizarPedido()">
+    Finalizar Pedido
+</button>
+
+        <button onclick="fecharCheckout()" class="cancel">Cancelar</button>
+
+    </div>
+
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/home.js"></script>
+<script src="js/produtos.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
